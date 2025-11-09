@@ -18,7 +18,8 @@ func _physics_process(delta):
 	move_and_slide()
 
 func turnGreen():
-	$Sprite2D.texture = load("res://icon.svg")
+	$Sprite2D.texture = load("res://icon2.png")
 
-func turnRed():
-	$Sprite2D.texture = load("res://2023_08_26_astronaut-21927400.png")
+func turnBack():
+	$Sprite2D.texture = load("res://icon.svg")
+	

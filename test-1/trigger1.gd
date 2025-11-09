@@ -1,11 +1,9 @@
 extends Area2D
 
-func _on_body_entered(body):
-	print_debug(body)
+func test1_on_body_entered(body):
 	if body.has_method("turnGreen"):
 		body.turnGreen()
 		
-func _on_body_exit(body):
-	print_debug(body)
-	if body.has_method("turnRed"):
-		body.turnRed()
+func test1_on_body_exited(body):
+	if body.has_method("turnBack"):
+		body.turnBack()
